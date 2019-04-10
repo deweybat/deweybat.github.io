@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   </head>
+  <body id="products-page" class="products-page">
+    <div id="site-wrapper">
+      <header id="site-header" class="sticky">
+        <nav class="navbar sticky" roll="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <h1 id="site-name">Dat Bui</h1>
+            </div>
+            <div id="main-navbar">
+              <ul class="nav navbar-nav">
+                </li>
 
-<body>
-  <div id="nav-placeholder">
-  </div>
-  <script>
-    $(function() {
-      $("#nav-placeholder").load("nav.html");
-    });
-  </script>
-  <div class="form-input">
-    <form action="https://formspree.io/deweybat@vt.edu" method="POST">
-      <input type="text" name="name">
-      <input type="email" name="_replyto">
-      <input type="submit" value="Send">
-    </form>
-  </div>
-</body>
+                <li class="dropdown">
+                  <a href="/about/" style="color: #282C34">About</a>
+                  <ul class="dropdown-menu">
+                    <li style="font-size: 1rem">About</li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="/contact/" style="color: #282C34">Contact</a>
+                  <ul class="dropdown-menu">
+                    <li style="font-size: 1rem">E-mail</li>
+                    <li style="font-size: 1rem">Form</li>
+                  </ul>
+                <li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="products-content">
+      </div>
+    </div>
+  </body>
 </html>
